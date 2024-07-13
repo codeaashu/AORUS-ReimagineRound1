@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html , body{
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button-container{
+            height: 10vh;
+            width: 20%;
+            scale: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: #fff; */
+            position: absolute;
+            z-index: 88;
+            transition: all ease-in-out .2s;
+        }
+        .button-left{
+            height: 10vh;
+            width: 50%;
+            /* background-color: aqua; */
+            position: relative;
+        }
+        .button-left::after{
+            content: "";
+            height: 1.6vh;
+            width: 1.6vh;
+            /* background-color: red; */
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border-left: 1.6px solid #FF6400;
+            border-bottom: 1.6px solid #FF6400;
+        }
+
+        .button-left::before{
+            content: "";
+            height: 1.6vh;
+            width: 1.6vh;
+            left: 0;
+            top: 0;
+            /* background-color: red; */
+            position: absolute;
+            border-left: 1.6px solid #FF6400;
+            border-top: 1.6px solid #FF6400;
+        }
+        .button-right{
+            height: 10vh;
+            width: 50%;
+            /* background-color: rgb(70, 130, 77); */
+            position: relative;
+        }
+        .button-right::before{
+            content: "";
+            height: 1.6vh;
+            width: 1.6vh;
+            /* background-color: red; */
+            position: absolute;
+            right: 0;
+            top: 0;
+            border-right: 1.6px solid #FF6400;
+            border-top: 1.6px solid #FF6400;
+        }
+        .button-right::after{
+            content: "";
+            height: 1.6vh;
+            width: 1.6vh;
+            /* background-color: red; */
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border-right: 1.6px solid #FF6400;
+            border-bottom: 1.6px solid #FF6400;
+        }
+
+        .button{
+            height: 7vh;
+            width: 18vw;
+            /* background-color: rgb(95, 158, 160); */
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button h2{
+            z-index: 99;
+            color: white;
+            font-family: aldrich;
+            transition: all ease-in-out .3s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <div class="button-left"></div>
+        <div class="button-right"></div>
+    </div>        
+    <div class="button">
+            <h2>product</h2>
+    </div>
+
+    <script>
+        var btn = document.querySelector(".button h2")
+        var btncnt = document.querySelector(".button-container")
+
+        btn.addEventListener("mouseenter", function(){
+            btncnt.style.scale = 1
+            btn.style.scale = 1.2
+            btn.style.color = "#FF6400"
+        })
+        btn.addEventListener("mouseleave", function(){
+            btncnt.style.scale = 0
+            btn.style.scale = 1
+            btn.style.color = "#FFF"
+        })
+    </script>
+</body>
+</html>
