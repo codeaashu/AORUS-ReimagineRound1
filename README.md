@@ -21,11 +21,6 @@
 
 </div>
 
-## Contributing 👨‍💻
-
-Big thanks to the 𝐢𝐜𝐞𝐜𝐫𝐞𝐚𝐦 team members Madhu Kalita - Rishi raj for their incredible work! This achievement reflects our hard work, creativity, and dedication. It has boosted our confidence and motivated us to push our boundaries. <br>
-**Any contributions you make are truly appreciated!**
-
 <a id="contributors"></a>
 
 ## Contributors 🤝
@@ -33,3 +28,6 @@ Big thanks to the 𝐢𝐜𝐞𝐜𝐫𝐞𝐚𝐦 team members Madhu Kalita - R
 <a href="https://github.com/codeaashu/AORUS-ReimagineRound1/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=codeaashu/AORUS-ReimagineRound1" />
 </a>
+
+Big thanks to the 𝐢𝐜𝐞𝐜𝐫𝐞𝐚𝐦 team members <a href="https://github.com/madhukalita">Madhu Kalita</a> - <a href="https://github.com/rishuu-12">Rishi Raj</a> for their incredible work! This achievement reflects our hard work, creativity, and dedication. It has boosted our confidence and motivated us to push our boundaries. <br>
+**Your contributions are truly appreciated!**
